@@ -16,14 +16,15 @@
 </style>
 
 <html> 
+    <title>Best Practices Associated with Using Classes Vs. Ids</title> 
+
     <head>
-        <title>Best Practices Associated with Using Classes Vs. Ids</title> 
+        <h1> The Best Practices Associated with Using Classes Vs. Ids</h1>
     </head>
 
-    <h1> The Best Practices Associated with Using Classes Vs. Ids</h1>
-
+    
     <body>
-        <div>
+        <div class="div">
             <h3 class="underline">What are Classes and Ids?</h3>  
                 <p>
                     Classes and Ids are both attributes used to change elements. Ids are unique and specific to the element and can only be used for that element whereas classes are not specific and can be used multiple times to target different elements. Think of ids like a student id where each student has an id specific for them whereas class is not specific and many different people can take the same class. 
@@ -45,11 +46,64 @@
 
                 </p>
         </div>
+<br>
+<br>
+        <div class="div">
+            <h3 class="underline">Let's look at some examples of Classes and Ids:</h3>
 
-        <div>
-            <h3 class="underline">Let's look at some examples of Classes and Ids</h3>
-            
+        </div>
+        <div class="div">
+          <p> Here, I have an example of a grocery list where I used classes to categorize items based on fruit, dairy, meat and vegetables in different colours.  
+         </p>
         </div>
 
+        <div class="box1">
+        <img class="imgborder" src="../images/html-class-produce.JPG"> 
+        <img class="imgborder" id="imgborderm" src="../images/css-class-produce.JPG">
+        <img class="imgborder" src="../images/web-class-produce.JPG">
+
+        </div>
+<br>
+<br>
+<br>
+        <div class="div">
+            <p> Let's say the supermarket is having a dairy product sale (yay!), I can use a new class (class=sale) on the same list to highlight in pink which products have a sale (Milk and Cheese). 
+            </p>
+            <p> To use two classes together, you can put them in the same " " with a space in between as seen in the example done for Milk and Cheese.     
+            </p>
+        </div>
+<br>
+<br>
+        <div class="box2">
+            <img class="imgborder" src="../images/html-class-sale.JPG"> 
+            <img class="imgborder" id="cssclassimg" src="../images/css-class-sale.JPG">
+            <img class="imgborder" src="../images/web-class-sale.JPG">
+        </div>
+<br>
+<br>
+<br>
+
+        <div class="div">
+            <p>
+                After hearing about the dairy product sale, we also find out that specifically Milk is having a buy 1 get 1 free offer. As the buy 1 get 1 free offer only applies to milk and not all dairy products, I can then use an ID attribute to highlight Milk in yellow with a red dotted border around it to emphasise that only Milk has the special deal. 
+            </p>
+            
+            <p>
+                Here, we can see that using the ID attribute of "oneforone", it had overridden the both the "dairy" and "sale" class formatting that was on Milk. 
+            </p>
+           
+        </div>
+<br>
+<br>
+<br>
+        <div>
+            
+        <div class="box2">
+            <img class="imgborder" src="../images/html-oneforone-id.JPG"> 
+            <img class="imgborder" id="cssclassimg" src="../images/css-oneforone-id.JPG">
+            <img class="imgborder" src="../images/web-oneforone-class-class-id.JPG">
+        </div>
+        
+        </div>
     </body>
 </html>
