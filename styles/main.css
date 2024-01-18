@@ -9,7 +9,7 @@ h1 {
 
 }
 
-img {
+#helloimg {
     max-width: 15vw;
     height: 15vw;
     /* border-style:solid;
@@ -47,7 +47,7 @@ body {
 }
 
 
-.div {
+.homediv {
     /* background-color: blue; */
     width: 50%;
     margin-left: 35%;
@@ -60,6 +60,49 @@ p {
     font-weight: 400;
     font-style: normal;
    
+}
+
+.div {
+     /* background-color: yellow; */
+     width: 50%;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.imgborder {
+    border-style: solid;
+    border-color:palevioletred;
+    border-width: 2px;
+    
+}
+
+#cssclassimg{
+    margin:5% 0% 5% 0%;
+    border-style: solid;
+    border-color:palevioletred;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#imgborderm {
+    border-style: solid;
+    border-color:palevioletred;
+    border-left: 0px;
+    border-right: 0px;
+    
 }
 
 @media screen and (max-width: 560px) {
