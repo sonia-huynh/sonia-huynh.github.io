@@ -53,6 +53,9 @@ h1 {
     font-weight: bold;
 }
 
+.italic {
+    font-style: italic;
+}
 body {
     background-color: rgba(243, 243, 226, 0.596); 
     color: #6f35bb;
@@ -90,6 +93,13 @@ p {
      margin-right: auto;
 }
 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    
+      }
+
 .box1 {
     display: flex;
     justify-content: space-evenly;
@@ -101,6 +111,11 @@ p {
     display: flex;
     justify-content: center;
     
+}
+
+.imgs {
+    max-width: 20vw;
+    max-height: 20vw;
 }
 
 .imgborder {
