@@ -9,6 +9,27 @@ h1 {
 
 }
 
+.navbar ul{
+    list-style-type: none;
+    background-color: rgba(199, 241, 227, 0.685);
+    padding: 15px;
+    margin: 5px 500px 5px 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar a{
+    color: rgb(156, 66, 81);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.navbar a:hover {
+    background-color: rgb(205, 159, 209);
+}
+
 #helloimg {
     max-width: 15vw;
     height: 15vw;
