@@ -1,6 +1,6 @@
 
 h1 {
-    color: rgb(214, 130, 144);
+    color: rgb(219, 125, 140);
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-size: 3rem;
@@ -59,7 +59,7 @@ body {
     font-family: "Delius", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 16px;
     /* display: block;
     margin-left: auto;
     margin-right: auto;
@@ -69,10 +69,10 @@ body {
 
 
 .homediv {
-    /* background-color: blue; */
-    width: 50%;
-    margin-left: 35%;
-    margin-right: 25%;
+    /* background-color: yellow; */
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 p {
@@ -123,6 +123,18 @@ p {
     border-color:palevioletred;
     border-left: 0px;
     border-right: 0px;
+    
+}
+
+.footerbox {
+        list-style-type: none;
+        text-decoration: none;
+        background-color: rgba(199, 241, 227, 0.685);
+        padding: 15px;
+        margin: 2% 30% 2% 30%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
     
 }
 
