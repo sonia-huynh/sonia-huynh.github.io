@@ -1,0 +1,63 @@
+
+h1 {
+    color: rgb(214, 130, 144);
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    font-style: normal;
+    text-align: center;
+
+}
+
+img {
+    max-width: 15%;
+    height: auto;
+    /* border-style:solid;
+    border-color: rgb(182, 234, 243);
+    border-radius: 100px; */
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+.underline {
+    text-decoration-line: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+body {
+    background-color: rgba(243, 243, 226, 0.596); 
+    color: #6f35bb;
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+   
+    
+}
+
+p {
+    color: #6f35bb;
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+   
+}
+
+@media screen and (max-width: 560px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    body {
+        font-size: 0.5rem;
+    }
+
+}
