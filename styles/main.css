@@ -10,8 +10,8 @@ h1 {
 }
 
 img {
-    max-width: 50%;
-    height: 50%;
+    max-width: 15vw;
+    height: 15vw;
     /* border-style:solid;
     border-color: rgb(182, 234, 243);
     border-radius: 100px; */
@@ -39,13 +39,20 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
-    display: block;
+    /* display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 25%; */
 
 }
 
+
+.div {
+    /* background-color: blue; */
+    width: 50%;
+    margin-left: 35%;
+    margin-right: 25%;
+}
 
 p {
     color: #6f35bb;
