@@ -9,6 +9,21 @@ h1 {
 
 }
 
+h2 {
+    color: rgb(201, 46, 72);
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.lobster-two-regular {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+  }
+
 .navbar ul{
     list-style-type: none;
     background-color: rgba(199, 241, 227, 0.685);
@@ -34,6 +49,10 @@ h1 {
 #helloimg {
     max-width: 15vw;
     height: 15vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     /* border-style:solid;
     border-color: rgb(182, 234, 243);
     border-radius: 100px; */
@@ -44,15 +63,13 @@ h1 {
 
 }
 
-.focus:focus-visible{
-    background-color: rgb(205, 159, 209);
-}
 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 30%;
+    /* background-color: yellow; */
   }
   
 .underline {
@@ -73,7 +90,7 @@ body {
     font-family: "Delius", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 17px;
     /* display: block;
     margin-left: auto;
     margin-right: auto;
@@ -92,6 +109,9 @@ body {
     margin-right: 30%;
 }
 
+div {
+    padding: 10px;
+}
 p {
     color: rgb(173, 81, 96);
     font-family: "Delius", cursive;
@@ -105,7 +125,9 @@ p {
      width: 50%;
      margin-left: auto;
      margin-right: auto;
+    
 }
+
 
 td, th {
     border: 1px solid #dddddd;
@@ -154,6 +176,12 @@ td, th {
     border-right: 0px;
     
 }
+
+/* .bubbles {
+    padding:10px;
+    background-color: rgb(238, 224, 147);
+    
+} */
 
 .footerbox {
         list-style-type: none;
