@@ -13,7 +13,7 @@ h1 {
     list-style-type: none;
     background-color: rgba(199, 241, 227, 0.685);
     padding: 15px;
-    margin: 2% 30% 2% 30%;
+    margin: 2% 20% 2% 20%;
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
@@ -23,11 +23,12 @@ h1 {
     color: rgb(156, 66, 81);
     text-decoration: none;
     font-weight: 600;
+    font-size: 1em;
     padding: 15px;
 }
 
 .navbar a:hover {
-    background-color: rgb(205, 159, 209);
+    background-color: rgb(223, 169, 180);
 }
 
 #helloimg {
@@ -68,7 +69,7 @@ h1 {
 
 body {
     background-color: rgba(243, 243, 226, 0.596); 
-    color: #6f35bb;
+    color: rgb(156, 66, 81);
     font-family: "Delius", cursive;
     font-weight: 400;
     font-style: normal;
@@ -92,9 +93,9 @@ body {
 }
 
 p {
-    color: #6f35bb;
+    color: rgb(173, 81, 96);
     font-family: "Delius", cursive;
-    font-weight: 400;
+    font-weight: 450;
     font-style: normal;
    
 }
@@ -159,14 +160,19 @@ td, th {
         text-decoration: none;
         background-color: rgba(199, 241, 227, 0.685);
         padding: 5px;
-        margin: 2% 30% 2% 30%;
+        margin: 2% 20% 2% 20%;
         overflow: hidden;
         display: flex;
         justify-content: center;
     
 }
 
-@media screen and (max-width: 560px) {
+.footerbox li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
     h1 {
         font-size: 1.5rem;
     }
@@ -175,4 +181,16 @@ td, th {
         font-size: 0.5rem;
     }
 
+}
+
+@media screen and (max-width: 750px){
+    .navbar ul {
+        margin: 2% 10% 2% 10%;
+    
+    }
+
+    .footerbox {
+        margin: 2% 10% 2% 10%;
+
+    }
 }
