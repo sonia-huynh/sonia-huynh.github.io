@@ -1,15 +1,13 @@
 <!DOCTYPE html> 
 <html> 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Itim&family=Lobster&display=swap" rel="stylesheet">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
-
     <title>Best Practices Associated with Using Classes Vs. Ids</title> 
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius&family=Itim&family=Lobster&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
 <body>
     <nav class="navbar" id="navbar">
@@ -20,106 +18,107 @@
           <li><a href="">About Me</li></a>
         </ul>
       </nav>    
-      
+ <header>    
     <h1 class="underline"> Best Practices Associated with Using Classes Vs. Ids</h1>
-        <div class="div">
-            <h3 class="underline">What are Classes and Ids?</h3>  
-                <p>
-                    Classes and Ids are both attributes used to change elements. Ids are unique and specific to the element and can only be used for that element whereas Classes are not specific and can be used multiple times to target different elements. Think of Ids like a student id where each student has an id specific for them whereas Class is not specific and many different people can take the same class. 
-                </p>
-                <p>    
-                    <table class="center">
-                      <tr>
-                        <td class="bold"> ID</td>
-                        <td class="bold"> Class</td>
-                      </tr>  
-                      <tr>
-                        <td> Unique</td>
-                        <td> Non-specific</td>
-                      </tr>
-                      <tr>
-                        <td> Specific</td>
-                        <td></td>
-                      </tr>
-                    </table>
-                </p>
-        </div>
-<br>
-        <div class="div">
-            <h3 class="underline">Let's look at some examples of how to use Classes and Ids:</h3>
-          <p> Here, I have an example of a grocery list where I used Classes to categorize items in different colours based on food type as seen by fruit, dairy, meat and vegetables.  
-         </p>
-        </div>
-        <div class="box1">
-        <img class="imgs imgborder" src="../images/html-class-produce.JPG"> 
-        <img class="imgs imgborder" id="imgborderm" src="../images/css-class-produce.JPG">
-        <img class="imgs imgborder" src="../images/web-class-produce.JPG">
-        </div>
-<br>
-<br>
-<br>
-        <div class="div">
-            <p> Let's say the supermarket is having a sale for Apples, Milk and Lettuce (yay!), I can use a new Class (class="sale") on the same grocery list to highlight in pink which products are on sale. 
-            </p>
-            <p class="italic"> <span class="bold">Note:</span> To use two Classes together, you can put them in the same Class attribute " " with a space in between as seen in the example done for Apple, Milk and lettuce.     
-            </p>
-        </div>
-<br>
-<br>
-        <div class="box2">
-            <img class="imgs imgborder"  src="../images/html-class-sale.JPG"> 
-            <img class="imgs imgborder"  id="cssclassimg" src="../images/css-class-sale.JPG">
-            <img class="imgs imgborder"  src="../images/web-class-sale.JPG">
-        </div>
-<br>
-<br>
-<br>
-        <div class="div">
+</header> 
+    <div class="div">
+        <h3 class="underline">What are Classes and Ids?</h3>  
             <p>
-                After hearing about the sale, we also find out that specifically Milk is having a buy 1 get 1 free deal! As the buy 1 get 1 free deal only applies to milk and not any of the other products, I can then use an Id attribute and name it "oneforone" to highlight Milk in yellow with a red dotted border around it to emphasise that only Milk has the special deal. 
+                Classes and Ids are both attributes used to change elements. Ids are unique and specific to the element and can only be used for that element whereas Classes are not specific and can be used multiple times to target different elements. Think of Ids like a student id where each student has an id specific for them whereas Class is not specific and many different people can take the same class. 
             </p>
-            <p>
-                Here, we can see that using the Id attribute of "oneforone", it had overridden the both the "dairy" and "sale" Class style formatting that was on Milk. 
+            <p>    
+                <table class="center">
+                    <tr>
+                    <td class="bold"> ID</td>
+                    <td class="bold"> Class</td>
+                    </tr>  
+                    <tr>
+                    <td> Unique</td>
+                    <td> Non-specific</td>
+                    </tr>
+                    <tr>
+                    <td> Specific</td>
+                    <td></td>
+                    </tr>
+                </table>
             </p>
-        </div>
+    </div>
+<br>
+    <div class="div">
+        <h3 class="underline">Let's look at some examples of how to use Classes and Ids:</h3>
+        <p> Here, I have an example of a grocery list where I used Classes to categorize items in different colours based on food type as seen by fruit, dairy, meat and vegetables.  
+        </p>
+    </div>
+    <div class="box1">
+    <img class="imgs imgborder" src="../images/html-class-produce.JPG"> 
+    <img class="imgs imgborder" id="imgborderm" src="../images/css-class-produce.JPG">
+    <img class="imgs imgborder" src="../images/web-class-produce.JPG">
+    </div>
 <br>
 <br>
 <br>
-        <div>
-        <div class="box2">
-            <img class="imgs imgborder"  src="../images/html-oneforone-id.JPG"> 
-            <img class="imgs imgborder" id="cssclassimg" src="../images/css-oneforone-id.JPG">
-            <img class="imgs imgborder"  src="../images/web-oneforone-class-class-id.JPG">
-        </div>
- <br>
- <br>
- <br>
-        <div class="div">
-            <h3 class="underline">So, what are the best practices of using Classes and Ids?</h3>
-            <p>
-                <ul>
-                    <li>Use a Class when you want to apply the same styling to multiple different elements on the same page - good for reusability</li>
-                    <li>Use Class to style blocks of content that you want to have a similar format - like I did with my example </li>
-                    <li>Ids are unique within your page so they are useful if you want to style a specific section of your site without wanting to reuse the same styling somewhere else</li>
-                    <li>Ids are also good for creating anchors within a page, just like what I did with this page, go on, click the "Move back up" in the footer to see it in action!</li>
-                    <li>You can use Classes and Ids both together, but Id will always override the class so, use Id if you want to override other styles</li>
-                    <li>You can use multiple classes together but you cannot do the same with an Id, remember, Id is unique</li>
-                </ul>
-            </p>
-        </div>
+    <div class="div">
+        <p> Let's say the supermarket is having a sale for Apples, Milk and Lettuce (yay!), I can use a new Class (class="sale") on the same grocery list to highlight in pink which products are on sale. 
+        </p>
+        <p class="italic"> <span class="bold">Note:</span> To use two Classes together, you can put them in the same Class attribute " " with a space in between as seen in the example done for Apple, Milk and lettuce.     
+        </p>
+    </div>
 <br>
-        <div class="div">
-            <h3 class="underline">Recap on the best practices of using Classes and Ids:</h3>
-            <p>
-                <ul>
-                    <li>Classes and Id differ because Id is specific and can only be associated with one element whereas classes can be used for multiple different elements.</li>
-                    <li>You can use Classes and Ids both together, but Id will always override the Class</li>
-                    <li>Classes are resusable so they are useful if you want to use the same styling requirements for multiple elements on your site </li>
-                    <li>You can use multiple Classes together but you cannot do the same with an Id</li>
-                    <li>Ids are unique within your page so they are useful if you want to use it for a specific section only</li>
-                </ul>
-            </p>
-        </div>
+<br>
+    <div class="box2">
+        <img class="imgs imgborder"  src="../images/html-class-sale.JPG"> 
+        <img class="imgs imgborder"  id="cssclassimg" src="../images/css-class-sale.JPG">
+        <img class="imgs imgborder"  src="../images/web-class-sale.JPG">
+    </div>
+<br>
+<br>
+<br>
+    <div class="div">
+        <p>
+            After hearing about the sale, we also find out that specifically Milk is having a buy 1 get 1 free deal! As the buy 1 get 1 free deal only applies to milk and not any of the other products, I can then use an Id attribute and name it "oneforone" to highlight Milk in yellow with a red dotted border around it to emphasise that only Milk has the special deal. 
+        </p>
+        <p>
+            Here, we can see that using the Id attribute of "oneforone", it had overridden the both the "dairy" and "sale" Class style formatting that was on Milk. 
+        </p>
+    </div>
+<br>
+<br>
+<br>
+    <div>
+    <div class="box2">
+        <img class="imgs imgborder"  src="../images/html-oneforone-id.JPG"> 
+        <img class="imgs imgborder" id="cssclassimg" src="../images/css-oneforone-id.JPG">
+        <img class="imgs imgborder"  src="../images/web-oneforone-class-class-id.JPG">
+    </div>
+<br>
+<br>
+<br>
+    <div class="div">
+        <h3 class="underline">So, what are the best practices of using Classes and Ids?</h3>
+        <p>
+            <ul>
+                <li>Use a Class when you want to apply the same styling to multiple different elements on the same page - good for reusability</li>
+                <li>Use Class to style blocks of content that you want to have a similar format - like I did with my example </li>
+                <li>Ids are unique within your page so they are useful if you want to style a specific section of your site without wanting to reuse the same styling somewhere else</li>
+                <li>Ids are also good for creating anchors within a page, just like what I did with this page, go on, click the "Move back up" in the footer to see it in action!</li>
+                <li>You can use Classes and Ids both together, but Id will always override the class so, use Id if you want to override other styles</li>
+                <li>You can use multiple classes together but you cannot do the same with an Id, remember, Id is unique</li>
+            </ul>
+        </p>
+    </div>
+<br>
+    <div class="div">
+        <h3 class="underline">Recap on the best practices of using Classes and Ids:</h3>
+        <p>
+            <ul>
+                <li>Classes and Id differ because Id is specific and can only be associated with one element whereas classes can be used for multiple different elements.</li>
+                <li>You can use Classes and Ids both together, but Id will always override the Class</li>
+                <li>Classes are resusable so they are useful if you want to use the same styling requirements for multiple elements on your site </li>
+                <li>You can use multiple Classes together but you cannot do the same with an Id</li>
+                <li>Ids are unique within your page so they are useful if you want to use it for a specific section only</li>
+            </ul>
+        </p>
+    </div>
 <br>
 <br>
     <div class="footerbox"> 
