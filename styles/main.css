@@ -77,7 +77,7 @@ h3 {
     margin-right: 30%;
 }
 
-div {
+/* div {
     padding: 10px;
 }
 /* 
@@ -97,20 +97,6 @@ p {
     
 }
 
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-    
-      }
-
-
-.bulletPointCenter {
-    text-align: left;
-    margin-left: 20%;
-}
-
 /* Navigation bar and Footer */
 .navbar ul{
     list-style-type: none;
@@ -121,7 +107,6 @@ td, th {
     display: flex;
     justify-content: space-evenly;
 }
-
 
 .navbar a{
     color:#D96141;
@@ -175,43 +160,9 @@ text-decoration: none;
     max-height: 20vw;
    }
 
-.imgborder {
-    border-style: solid;
-    border-color:palevioletred;
-    border-width: 2px;
-    
-}
-
-.removeRBorder {
-    border-style: solid;
-    border-color:palevioletred;
-    border-right: 0px;
-}
-
-.wideimgs {
-    max-width:40vw;
-    max-height:20vw;
-
-}
-
-#cssclassimg{
-    margin:5% 0% 5% 0%;
-    border-style: solid;
-    border-color:palevioletred;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-#imgborderm {
-    border-style: solid;
-    border-color:palevioletred;
-    border-left: 0px;
-    border-right: 0px;
-    
-}
 
 /* Layout */
-.box1 {
+/* .box1 {
     display: flex;
     justify-content: space-evenly;
     margin-left: 30%;
@@ -221,8 +172,7 @@ text-decoration: none;
 .box2 {
     display: flex;
     justify-content: center;
-    
-}
+} */
 
 /* Media Queries */
 
