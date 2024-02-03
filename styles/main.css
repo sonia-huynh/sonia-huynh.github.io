@@ -45,13 +45,14 @@ h3 {
     width: 25%; */
 }
 
-.center {
+#menuCenter {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
     /* background-color: yellow; */
-  }
+}
+
   
 .underline {
     text-decoration-line: underline;
