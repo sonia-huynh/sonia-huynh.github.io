@@ -55,6 +55,13 @@ div {
     /* background-color: yellow; */
   }
 
+.imgCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: yellow; */
+  }
+
 /* Styling */
 .underline {
     text-decoration-line: underline;
@@ -111,6 +118,11 @@ td, th {
     max-width:40vw;
     max-height:20vw;
 
+}
+
+.bigimgs {
+    max-width: 60vw;
+    max-height:80vw;
 }
 
 #cssclassimg{
