@@ -1,15 +1,10 @@
-import '../../style/main.css'
+import waving from '../../Public/images/hello-world.png'
 
 function Home() {
   return (
     <div>
       <div>
-        <img
-          id="helloimg"
-          className="center"
-          src="../../Public/images/hello-world.png"
-          alt="waving"
-        />
+        <img id="helloimg" className="center" src={waving} alt="waving" />
       </div>
       <div className="homediv">
         <p>Hello there!</p>
@@ -27,6 +22,28 @@ function Home() {
           Outside of coding, I have an interest in reading, crocheting and
           playing card/board games with my friends and family.
         </p>
+        <div className="contact">
+          <h2 className="underline">Contact me: </h2>
+          <p>
+            <strong>Email: </strong> soniahuynhkl@gmail.com
+          </p>
+          <p>
+            <strong>CV: </strong>
+            <a href="https://drive.google.com/file/d/1S0KmujoACYt8gfnF3dhkkUWoxd5l_21n/view?usp=sharing">
+              Sonia's CV
+            </a>
+          </p>
+          <p>
+            <strong>Github: </strong>
+            <a href="https://github.com/sonia-huynh">Sonia's Github</a>
+          </p>
+          <p>
+            <strong>LinkedIn: </strong>
+            <a href="https://www.linkedin.com/in/sonia-huynh/">
+              Sonia's LinkedIn
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   )
