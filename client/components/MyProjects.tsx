@@ -1,4 +1,12 @@
-import bookBoundProject from '../../Public/images/hello-world.png'
+import bookBoundProject from '../../Public/images/BookboundDemo.jpg'
+import bookBoundLogin from '../../Public/images/bookboundSignIn.jpg'
+import LucasMansion from '../../Public/images/LucasMansion.jpg'
+import toDo from '../../Public/images/todo.jpg'
+import said from '../../Public/images/ThatsWhatTheySaid.jpg'
+import bean from '../../Public/images/dreamBean.jpg'
+import right from '../../Public/images/nextRight.png'
+import left from '../../Public/images/nextLeft.png'
+import { useState } from 'react'
 
 export default function MyProjects() {
   return (
@@ -11,7 +19,10 @@ export default function MyProjects() {
             src={bookBoundProject}
             alt="book bound logo"
           />
-          <p>Check out my repo:</p>
+          <p>
+            Check out my repo:{' '}
+            <a href="https://github.com/sonia-huynh/BookBound">BookBound</a>
+          </p>
           <p>
             My current project I&apos;m working on is creating a personal book
             review and rating app. One of my hobbies is reading and I also love
@@ -31,18 +42,21 @@ export default function MyProjects() {
         <br />
         <div className="box">
           <h1 className="underline">Lucas&apos; Mansion</h1>
-          <img
-            className="imgcard"
-            src="../images/LucasMansion.JPG"
-            alt="Lucas's mansion"
-          />
-          <p>Play the game!</p>
+          <img className="imgcard" src={LucasMansion} alt="Lucas's mansion" />
+          <p>
+            <a href="https://lucas-mansion.pushed.nz/">Play the game!</a>
+          </p>
           <p className="note">
             <i id="note">
               <strong>Note:</strong> This can only be played on a desktop.
             </i>
           </p>
-          <p>Check out the repo: Lucas&apos; Mansion Repo</p>
+          <p>
+            Check out the repo:{' '}
+            <a href="https://github.com/harakeke-2024/Lucas-Mansion">
+              Lucas&apos; Mansion Repo
+            </a>
+          </p>
 
           <p>
             For my final show case project at the end of my bootcamp my team and
@@ -70,12 +84,12 @@ export default function MyProjects() {
 
         <div className="box">
           <h1 className="underline">Todo full-stack</h1>
-          <img
-            className="imgcard"
-            src="../images/todo.JPG"
-            alt="todo fullstack"
-          />
-          <p>Check out my todo repo: Todos</p>
+          <img className="imgcard" src={toDo} alt="todo fullstack" />
+          <p>
+            Check out my todo repo:{' '}
+            <a href="https://github.com/sonia-huynh/ToDo-fullstack">Todos</a>
+          </p>
+
           <p>
             I have also deployed this if you would like to add a todo to my
             list! Add a Todo
@@ -91,12 +105,14 @@ export default function MyProjects() {
         <br />
         <div className="box">
           <h1 className="underline">That&apos;s What They Said!</h1>
-          <img
-            className="imgcard"
-            src="../images/ThatsWhatTheySaid.JPG"
-            alt="that's what they said"
-          />
-          <p>Check out the repo: That&apos;s What they Said</p>
+          <img className="imgcard" src={said} alt="that's what they said" />
+          <p>
+            Check out the repo:{' '}
+            <a href="https://github.com/harakeke-2024/That-s-What-They-Said-">
+              That&apos;s What they Said
+            </a>
+          </p>
+
           <p>
             Armed with the ability of a fullstack, for my final Friday group
             project my team and I decided to build another trivia game from
@@ -128,11 +144,17 @@ export default function MyProjects() {
           <h1 className="underline">DreamBeanMemeTeam</h1>
           <img
             className="imgcard"
-            src="../images/dreamBean.JPG"
+            src={bean}
             alt="
          dream bean meme team game "
           />
-          <p>Check out my jelly bean repo: DreamBeanMemeTeam</p>
+          <p>
+            Check out my jelly bean repo:{' '}
+            <a href="https://github.com/sonia-huynh/DreamBeanMemeTeam">
+              DreamBeanMemeTeam
+            </a>
+          </p>
+
           <p>
             This Friday Group Project&apos;s focus was to use an external api to
             build something, so we created a fun guessing game using the Jelly

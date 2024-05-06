@@ -82,6 +82,27 @@ body {
   margin-right: 30%;
 }
 
+#arrowL {
+  margin-right: 15px;
+  margin-top: 130px;
+  height: 50px;
+}
+
+.butt {
+  background-color: transparent;
+  border: transparent;
+}
+
+#arrowR {
+  margin-left: 15px;
+  height: 50px;
+}
+
+.imgBox {
+  display: flex;
+  flex-direction: row;
+}
+
 .imgcard {
   max-width: 30vw;
   max-height: 20vw;
