@@ -1,0 +1,26 @@
+/* Navigation bar and Footer */
+.navbar {
+  list-style-type: none;
+  background-color: #00afb9;
+  padding: 15px;
+  margin: 2% 20% 2% 20%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  color: #fdfcdc;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 15px;
+}
+
+.navbar a:hover {
+  background-color: rgb(223, 169, 180);
+}
+
+.hover:hover {
+  background-color: rgb(223, 169, 180);
+}
