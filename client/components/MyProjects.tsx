@@ -11,6 +11,7 @@ import bean from '../../Public/images/dreamBean.jpg'
 import right from '../../Public/images/nextRight.png'
 import left from '../../Public/images/nextLeft.png'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function MyProjects() {
   const bookBoundPics = [
@@ -73,7 +74,8 @@ export default function MyProjects() {
             saved in a personal journal type way without the social aspect of
             sharing my reivews to others, which is why I am currently building
             this project. It&apos;s currently a work in progress, so the picture
-            shown above is a part of my wireframe of how I want it to look...
+            shown above is a part of my wireframe of how I want it to look.{' '}
+            <Link to="/my-projects/bookbound">Read more... </Link>
           </p>
 
           <p>
