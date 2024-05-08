@@ -82,15 +82,11 @@ body {
   margin-right: 30%;
 }
 
-#arrowL {
-  margin-right: 15px;
-  margin-top: 130px;
-  height: 50px;
-}
-
-.butt {
-  background-color: transparent;
-  border: transparent;
+.imgBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 #arrowR {
@@ -98,9 +94,14 @@ body {
   height: 50px;
 }
 
-.imgBox {
-  display: flex;
-  flex-direction: row;
+#arrowL {
+  margin-right: 15px;
+  height: 50px;
+}
+
+.butt {
+  background-color: transparent;
+  border: transparent;
 }
 
 .imgcard {

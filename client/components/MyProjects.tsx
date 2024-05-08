@@ -1,5 +1,9 @@
 import bookBoundProject from '../../Public/images/BookboundDemo.jpg'
-import bookBoundLogin from '../../Public/images/bookboundSignIn.jpg'
+import login from '../../Public/images/bookboundSignIn.jpg'
+import search from '../../Public/images/bookBoundSearch.jpg'
+import books from '../../Public/images/bookBoundBooks.jpg'
+import review from '../../Public/images/bookBoundReviews.jpg'
+import reviewPage from '../../Public/images/bookBoundReviewPage.jpg'
 import LucasMansion from '../../Public/images/LucasMansion.jpg'
 import toDo from '../../Public/images/todo.jpg'
 import said from '../../Public/images/ThatsWhatTheySaid.jpg'
@@ -9,16 +13,55 @@ import left from '../../Public/images/nextLeft.png'
 import { useState } from 'react'
 
 export default function MyProjects() {
+  const bookBoundPics = [
+    bookBoundProject,
+    login,
+    search,
+    review,
+    books,
+    reviewPage,
+  ]
+
+  const [imgIndex, setImgIndex] = useState(0)
+
+  function handleRightClick() {
+    setImgIndex((prevIndex) => {
+      if (prevIndex === bookBoundPics.length - 1) {
+        return 0
+      } else {
+        return prevIndex + 1
+      }
+    })
+  }
+
+  function handleLeftClick() {
+    setImgIndex((prevIndex) => {
+      if (prevIndex === 0) {
+        return bookBoundPics.length - 1
+      } else {
+        return prevIndex - 1
+      }
+    })
+  }
+
   return (
     <>
       <div className="homediv">
         <div className="box">
           <h1 className="underline">BookBound</h1>
-          <img
-            className="imgcard"
-            src={bookBoundProject}
-            alt="book bound logo"
-          />
+          <div className="imgBox">
+            <button className="butt" onClick={handleLeftClick}>
+              <img src={left} alt="left button" id="arrowL" />
+            </button>
+            <img
+              className="imgcard"
+              src={bookBoundPics[imgIndex]}
+              alt="book bound pics"
+            />
+            <button className="butt" onClick={handleRightClick}>
+              <img src={right} alt="right button" id="arrowR" />
+            </button>
+          </div>
           <p>
             Check out my repo:{' '}
             <a href="https://github.com/sonia-huynh/BookBound">BookBound</a>
