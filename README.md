@@ -1,26 +1,9 @@
-# Phase 1 Boilerplate
+#  Sonia's Portfolio 💁‍♀️💻
 
-## Packages Included
-
-- react
-- react-router-dom
-- @tanstack/react-query
-- vite
-- vitest
-- eslint
-
-## Setup
-
-- [ ] Clone this repo, navigate to it, install packages, and start the server with `npm run dev`
-  <details style="padding-left: 2em">
-    <summary>Tip</summary>
-
-    ```sh
-    npm install
-    npm run dev
-    ```
-  </details>
-
----
-
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-phase1)
+Hello 🙋‍♀️, this is the repo to my portfolio! 
+<br>
+<br>
+During my time at the Dev Academy bootcamp where I learnt to code we had to create our own blog using HTML and CSS, and just for nostalgia's sake I have turned the blog into a React app but kept the styling and layout of my portfolio the same as my blog 😌. 
+<br>
+<br> 
+Check out my portfolio [here](https://sonia-huynh.github.io/) to see what projects I am currently working on and what projects I had completed while at the bootcamp~ 
