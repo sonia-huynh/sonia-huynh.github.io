@@ -8,6 +8,7 @@ import LucasMansion from '../../Public/images/LucasMansion.jpg'
 import toDo from '../../Public/images/todo.jpg'
 import said from '../../Public/images/ThatsWhatTheySaid.jpg'
 import bean from '../../Public/images/dreamBean.jpg'
+import beanvid from '../../Public/images/dreambeanmemeteam.mp4'
 import right from '../../Public/images/nextRight.png'
 import left from '../../Public/images/nextLeft.png'
 import { useState } from 'react'
@@ -187,12 +188,13 @@ export default function MyProjects() {
 
         <div className="box">
           <h1 className="underline">DreamBeanMemeTeam</h1>
-          <img
+          {/* <img
             className="imgcard"
             src={bean}
             alt="
          dream bean meme team game "
-          />
+          /> */}
+          <video src={beanvid} className="imgcard" controls />
           <p>
             Check out my jelly bean repo:{' '}
             <a href="https://github.com/sonia-huynh/DreamBeanMemeTeam">
