@@ -29,7 +29,7 @@ function Home() {
           </p>
           <p>
             <strong>CV: </strong>
-            <a href="https://drive.google.com/file/d/1S0KmujoACYt8gfnF3dhkkUWoxd5l_21n/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1L8O4_ZO00-q_MCAcbTtgQx1WmHaDHp-k/view">
               Sonia's CV
             </a>
           </p>
