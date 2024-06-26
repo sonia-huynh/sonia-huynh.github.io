@@ -7,7 +7,6 @@ import reviewPage from '../../Public/images/bookBoundReviewPage.jpg'
 import LucasMansion from '../../Public/images/LucasMansion.jpg'
 import toDo from '../../Public/images/todo.jpg'
 import said from '../../Public/images/ThatsWhatTheySaid.jpg'
-import bean from '../../Public/images/dreamBean.jpg'
 import beanvid from '../../Public/images/dreambeanmemeteam.mp4'
 import right from '../../Public/images/nextRight.png'
 import left from '../../Public/images/nextLeft.png'
@@ -76,7 +75,7 @@ export default function MyProjects() {
             sharing my reivews to others, which is why I am currently building
             this project. It&apos;s currently a work in progress, so the picture
             shown above is a part of my wireframe of how I want it to look.{' '}
-            <Link to="/my-projects/bookbound">Read more... </Link>
+            <Link to="/my-projects/BookBoundBlog/Menu">Read more... </Link>
           </p>
 
           <p>
@@ -188,12 +187,7 @@ export default function MyProjects() {
 
         <div className="box">
           <h1 className="underline">DreamBeanMemeTeam</h1>
-          {/* <img
-            className="imgcard"
-            src={bean}
-            alt="
-         dream bean meme team game "
-          /> */}
+
           <video src={beanvid} className="imgcard" controls />
           <p>
             Check out my jelly bean repo:{' '}
