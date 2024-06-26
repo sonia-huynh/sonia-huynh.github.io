@@ -49,7 +49,7 @@ export default function BookBound() {
         </button>
         <button
           className="blogButtons"
-          onClick={() => navigate('/my-projects/BookBoundBlog/localStorage')}
+          onClick={() => navigate('/BookBoundBlog/localStorage')}
         >
           Next Blog →
         </button>

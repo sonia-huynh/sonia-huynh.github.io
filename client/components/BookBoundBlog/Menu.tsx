@@ -7,21 +7,19 @@ export default function Menu() {
           <ol>
             <p>
               <li>
-                <a href="/my-projects/BookBoundBlog/BookBound">Search Bar</a>
+                <a href="/BookBoundBlog/SearchBar">Search Bar</a>
               </li>
             </p>
             <p>
               <li>
-                <a href="/my-projects/BookBoundBlog/localStorage">
+                <a href="/BookBoundBlog/localStorage">
                   Save Book in Browser Local Storage
                 </a>
               </li>
             </p>
             <p>
               <li>
-                <a href="/my-projects/BookBoundBlog/starRating">
-                  Half Star Rating
-                </a>
+                <a href="/BookBoundBlog/starRating">Half Star Rating</a>
               </li>
             </p>
           </ol>

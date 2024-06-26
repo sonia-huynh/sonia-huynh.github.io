@@ -59,7 +59,7 @@ export default function LocalStorage() {
         </button>
         <button
           className="blogButtons"
-          onClick={() => navigate('/my-projects/BookBoundBlog/starRating')}
+          onClick={() => navigate('/BookBoundBlog/starRating')}
         >
           Next Blog →
         </button>
