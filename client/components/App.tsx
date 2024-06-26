@@ -2,8 +2,11 @@ import Navbar from './Navbar'
 import Home from './Home'
 import { Route, Routes } from 'react-router-dom'
 import MyProjects from './MyProjects'
-import BookBound from './BookBound'
+import BookBound from './BookBoundBlog/BookBound'
 import Footer from './Footer'
+import Menu from './BookBoundBlog/Menu'
+import LocalStorage from './BookBoundBlog/LocalStorage'
+import StarRating from './BookBoundBlog/StarRating'
 
 function App() {
   return (
@@ -13,7 +16,19 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/my-projects" element={<MyProjects />} />
-        <Route path="/my-projects/bookbound" element={<BookBound />} />
+        <Route path="/my-projects/BookBoundBlog/Menu" element={<Menu />} />
+        <Route
+          path="/my-projects/BookBoundBlog/BookBound"
+          element={<BookBound />}
+        />
+        <Route
+          path="/my-projects/BookBoundBlog/localStorage"
+          element={<LocalStorage />}
+        />
+        <Route
+          path="/my-projects/BookBoundBlog/starRating"
+          element={<StarRating />}
+        />
       </Routes>
       <Footer />
     </>
