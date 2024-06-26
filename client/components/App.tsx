@@ -15,11 +15,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/my-projects" element={<MyProjects />} />
-        <Route path="/my-projects/BookBoundBlog/Menu" element={<Menu />} />
-        <Route path="/BookBoundBlog/SearchBar" element={<BookBound />} />
-        <Route path="/BookBoundBlog/localStorage" element={<LocalStorage />} />
-        <Route path="/BookBoundBlog/starRating" element={<StarRating />} />
+        <Route path="my-projects" element={<MyProjects />} />
+        <Route path="my-projects/BookBoundBlog/Menu" element={<Menu />} />
+        <Route path="BookBoundBlog/SearchBar" element={<BookBound />} />
+        <Route path="BookBoundBlog/localStorage" element={<LocalStorage />} />
+        <Route path="BookBoundBlog/starRating" element={<StarRating />} />
       </Routes>
       <Footer />
     </>

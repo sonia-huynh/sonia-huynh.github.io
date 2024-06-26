@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Menu() {
   return (
     <>
@@ -7,19 +9,19 @@ export default function Menu() {
           <ol>
             <p>
               <li>
-                <a href="/BookBoundBlog/SearchBar">Search Bar</a>
+                <Link to="/BookBoundBlog/SearchBar">Search Bar</Link>
               </li>
             </p>
             <p>
               <li>
-                <a href="/BookBoundBlog/localStorage">
+                <Link to="/BookBoundBlog/localStorage">
                   Save Book in Browser Local Storage
-                </a>
+                </Link>
               </li>
             </p>
             <p>
               <li>
-                <a href="/BookBoundBlog/starRating">Half Star Rating</a>
+                <Link to="/BookBoundBlog/starRating">Half Star Rating</Link>
               </li>
             </p>
           </ol>
