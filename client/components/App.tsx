@@ -2,11 +2,11 @@ import Navbar from './Navbar'
 import Home from './Home'
 import { Route, Routes } from 'react-router-dom'
 import MyProjects from './MyProjects'
-import BookBound from './BookBoundBlog/BookBound'
+import BookBound from '../components/BookBoundBlog/BookBound'
 import Footer from './Footer'
-import Menu from './BookBoundBlog/Menu'
-import LocalStorage from './BookBoundBlog/LocalStorage'
-import StarRating from './BookBoundBlog/StarRating'
+import Menu from '../components/BookBoundBlog/Menu'
+import LocalStorage from '../components/BookBoundBlog/LocalStorage'
+import StarRating from '../components/BookBoundBlog/StarRating'
 
 function App() {
   return (
