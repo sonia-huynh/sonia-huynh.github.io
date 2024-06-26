@@ -6,6 +6,29 @@
   font-size: 30px;
 }
 
+#intro1 {
+  position: relative;
+  margin-right: 1500px;
+  color: #6247aa;
+  font-family: 'Lobster', sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+  font-style: normal;
+  text-align: center;
+}
+
+#intro2 {
+  position: relative;
+  margin-right: 1200px;
+  margin-top: -50px;
+  color: #6247aa;
+  font-family: 'Lobster', sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+  font-style: normal;
+  text-align: center;
+}
+
 /* Headers */
 h1 {
   color: #f07167;
@@ -31,8 +54,8 @@ h3 {
 
 /* body */
 body {
-  background-color: rgba(243, 243, 226, 0.596);
-  color: #9c4251;
+  background-color: #fdf7ff;
+  color: #6247aa;
   font-family: 'Delius', cursive;
   font-weight: 500;
   font-style: normal;
@@ -63,10 +86,6 @@ body {
   text-decoration-line: underline;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 .italic {
   font-style: italic;
 }
@@ -75,11 +94,27 @@ body {
   text-align: center;
 }
 
+.homeBox {
+  display: flex;
+}
+
 .homediv {
   /* background-color: yellow; */
   width: 40%;
   margin-left: 30%;
   margin-right: 30%;
+}
+
+.homeAboutDiv {
+  width: 41%;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 5%;
+  padding: 5px;
+  /* border: solid 2px rgb(182, 234, 243); */
+  border-radius: 25px;
+  padding: 30px;
+  z-index: 1;
 }
 
 .imgBox {
@@ -160,9 +195,9 @@ p {
 /* Navigation bar and Footer */
 .navbar {
   list-style-type: none;
-  background-color: #00afb9;
+  background-color: #a06cd5;
   padding: 15px;
-  margin: 2% 20% 2% 20%;
+  margin: 2% 0% 2% 0%;
   overflow: hidden;
   display: flex;
   justify-content: space-evenly;
@@ -188,9 +223,9 @@ p {
 .footerbox {
   list-style-type: none;
   text-decoration: none;
-  background-color: #00afb9;
+  background-color: #a06cd5;
   padding: 5px;
-  margin: 2% 20% 2% 20%;
+  margin: 2% 0% 2% 0%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -205,20 +240,36 @@ p {
 
 /* images */
 #helloimg {
-  max-width: 15vw;
-  height: 15vw;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  /* border-style:solid;
-    border-color: rgb(182, 234, 243);
-    border-radius: 100px; */
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 90px;
+  width: 20vw;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
+}
+
+#browser {
+  position: absolute;
+  margin-left: 260px;
+  margin-top: 18px;
+  width: 45vw;
+  max-height: auto;
+  z-index: -1;
 }
 
 .imgs {
   max-width: 30vw;
   max-height: 20vw;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rightIcons {
+  margin-right: 20px;
 }
 
 /* Layout */
