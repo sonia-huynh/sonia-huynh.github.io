@@ -136,10 +136,6 @@ export default function MyProjects() {
           </p>
 
           <p>
-            I have also deployed this if you would like to add a todo to my
-            list! Add a Todo
-          </p>
-          <p>
             To practice my full stack abilities I built a todo app implementing
             both frontend tech such as React, Typescript, custom hooks, useQuery
             for client-side development and backend tech such as Node.js for

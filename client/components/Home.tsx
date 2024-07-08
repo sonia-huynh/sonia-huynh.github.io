@@ -29,18 +29,18 @@ function Home() {
           </p>
           <p>
             <strong>CV: </strong>
-            <a href="https://drive.google.com/file/d/1L8O4_ZO00-q_MCAcbTtgQx1WmHaDHp-k/view">
-              Sonia's CV
+            <a href="https://drive.google.com/file/d/1MpoVYO_41-xqc67y0wMVrvoiji6rARaB/view?usp=sharing">
+              Sonia&apos;s CV
             </a>
           </p>
           <p>
             <strong>Github: </strong>
-            <a href="https://github.com/sonia-huynh">Sonia's Github</a>
+            <a href="https://github.com/sonia-huynh">Sonia&apos;s Github</a>
           </p>
           <p>
             <strong>LinkedIn: </strong>
             <a href="https://www.linkedin.com/in/sonia-huynh/">
-              Sonia's LinkedIn
+              Sonia&apos;s LinkedIn
             </a>
           </p>
         </div>
