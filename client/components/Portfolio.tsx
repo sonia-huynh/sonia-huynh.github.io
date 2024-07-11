@@ -115,7 +115,7 @@ function Portfolio() {
               </button>
               <button
                 className="home-button"
-                onClick={() => () => (location.href = './#contact')}
+                onClick={() => (location.href = '/#contact')}
               >
                 Contact me
               </button>
