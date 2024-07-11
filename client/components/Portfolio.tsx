@@ -5,6 +5,10 @@ import github from '../../Public/images/github.png'
 import about from '../../Public/images/about.png'
 import arrow from '../../Public/images/arrow.png'
 import check from '../../Public/images/checkmark.png'
+import bookBound from '../../Public/assets/BookBoundDemo.mp4'
+import bean from '../../Public/assets/dreambeanmemeteam.mp4'
+import Lucas from '../../Public/assets/LucasMansionDemo.mp4'
+
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
@@ -142,7 +146,7 @@ function Portfolio() {
       </section>
       <br />
       <section id="about">
-        <p className="section-text-p1">Get To Know More</p>
+        <p className="section-text-p1">A Bit</p>
         <h1 className="title">About me</h1>
         <div className="section-container">
           <div className="text-container">
@@ -261,6 +265,150 @@ function Portfolio() {
           onClick={() => (location.href = './#projects')}
         >
           <img src={arrow} alt="move to next section" className="arrow icon" />
+        </button>
+      </section>
+      <section id="projects">
+        <p className="section-text-p1">Browse My Recent</p>
+        <h1 className="title">Projects</h1>
+        <div className="tech-details-container project-details-container">
+          <div className="project-box">
+            <h2 className="project-title">BookBound</h2>
+            <div className="project-container">
+              <video controls className="project-video">
+                <source src={bookBound} type="video/mp4" />
+                <track kind="captions" src="" srcLang="en" label="English" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="text-container">
+                <p>
+                  My first personal project I created is a personal book review
+                  and rating app. One of my hobbies is reading and I also love
+                  to write down my reviews for books, however, I wanted to have
+                  it all saved in a personal journal type way without the social
+                  aspect of sharing my reivews to others.
+                </p>
+                <br />
+                <p>
+                  This project helped consolidate my learning on using external
+                  APIs and how to build a fullstack web app from scratch.
+                </p>
+                <br />
+                <br />
+                <h3>Tech Stack:</h3>
+                <p>
+                  React, Typescript, Tailwind, SQLite (with knex.js), Node.js,
+                  Superagent, Express and GoogleBooks api
+                </p>
+              </div>
+            </div>
+            <div className="project-button">
+              <a
+                href="https://github.com/sonia-huynh/BookBound"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="home-button project-button">Github</button>
+              </a>
+            </div>
+          </div>
+          <div className="project-box">
+            <h2 className="project-title">Lucas&apos; Mansion</h2>
+            <div className="project-container">
+              <div className="text-container">
+                <p>
+                  My bootcamp final showcase group project was a point and click
+                  digital escape room.
+                </p>
+                <br />
+                <p>
+                  Our goal was to create at least four different games to
+                  practice game logic, create multiple clickable items within
+                  the room each with their own pop up component and lastly,
+                  create at least 3 separate routes to different rooms.
+                </p>
+
+                <br />
+                <p>
+                  The game has been deployed and is only supported by desktop.
+                </p>
+                <br />
+                <br />
+
+                <h3>Tech Stack:</h3>
+                <p>
+                  React, Typescript, CSS, SQLite (with knex.js), Node.js and
+                  Express.js
+                </p>
+              </div>
+              <video controls className="project-video">
+                <source src={Lucas} type="video/mp4" />
+                <track kind="captions" src="" srcLang="en" label="English" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="project-button home-button-container">
+              <a
+                href="https://github.com/sonia-huynh/Lucas-Mansion"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="home-button project-button">Github</button>
+              </a>
+              <a
+                href="https://lucas-mansion.pushed.nz/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="home-button project-button">
+                  Play Game!
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className="project-box">
+            <h2 className="project-title">DreamBeanMemeTeam</h2>
+            <div className="project-container">
+              <video controls className="project-video">
+                <source src={bean} type="video/mp4" />
+                <track kind="captions" src="" srcLang="en" label="English" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="text-container">
+                <p>
+                  This Friday Group Project&apos;s focus was to use an external
+                  api to build something, so we created a fun guessing game
+                  using the JellyBelly Api where we randomised the names of the
+                  jelly beans given to you and you have to click on the correct
+                  jelly bean that matches the name.
+                </p>
+
+                <br />
+                <br />
+                <h3>Tech Stack:</h3>
+                <p>React, Typescript, CSS and Jelly Belly api</p>
+              </div>
+            </div>
+            <div className="project-button">
+              <a
+                href="https://github.com/sonia-huynh/DreamBeanMemeTeam"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="home-button project-button">Github</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button
+          className="nav-button"
+          onClick={() => (location.href = './#contact')}
+        >
+          <img
+            src={arrow}
+            alt="move to next section"
+            className="icon"
+            id="project-arrow"
+          />
         </button>
       </section>
     </>
