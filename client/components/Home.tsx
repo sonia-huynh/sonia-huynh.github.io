@@ -1,13 +1,11 @@
 import waving from '../../Public/images/hello-world.png'
-import browser from '../../Public/images/widebrowser.png'
 
 function Home() {
   return (
     <>
       <h1 id="intro1">Hello! </h1>
-      <h1 id="intro2">I&apos;m Sonia </h1>
+      {/* <h1 id="intro2">I&apos;m Sonia </h1>
       <div className="homeBox">
-        <img src={browser} alt="background" id="browser" />
         <div className="homeAboutDiv">
           <p>
             My name is Sonia and I am an enthusiastic and compassionate
@@ -64,7 +62,7 @@ function Home() {
         <div className="icons">
           <img id="helloimg" className="" src={waving} alt="waving" />
         </div>
-      </div>
+      </div> */}
     </>
   )
 }
