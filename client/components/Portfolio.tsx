@@ -3,8 +3,16 @@ import CV from '../../Public/assets/Sonia Huynh CV 2024.pdf'
 import linkedin from '../../Public/images/linkedin.png'
 import github from '../../Public/images/github.png'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
-function Home() {
+function Portfolio() {
+  const [toggle, setToggle] = useState(false)
+  const [hamburgerIcon, setHamburgerIcon] = useState(true)
+
+  function toggleMenu() {
+    setToggle((prevState) => !prevState)
+    setHamburgerIcon((prevState) => !prevState)
+  }
   const navigate = useNavigate()
   function openCV() {
     window.open(CV, '_blank')
@@ -12,6 +20,73 @@ function Home() {
 
   return (
     <>
+      <nav className="navbar">
+        <div className="logo">Sonia Huynh </div>
+        <div>
+          <ul className="nav-links">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav className="hamburger-nav">
+        <div className="logo">Sonia Huynh</div>
+        <div className="hamburger-menu">
+          <div
+            className={hamburgerIcon ? 'hamburger-icon' : 'hamburger-icon-open'}
+            onClick={toggleMenu}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                toggleMenu()
+              }
+            }}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          {toggle && (
+            <>
+              <div className={toggle ? 'menu-links-open' : 'menu-links'}>
+                <li>
+                  <button className="nav-button" onClick={toggleMenu}>
+                    <a href="#home">Home</a>
+                  </button>
+                </li>
+                <li>
+                  <button className="nav-button" onClick={toggleMenu}>
+                    <a href="#about">About</a>
+                  </button>
+                </li>
+                <li>
+                  <button className="nav-button" onClick={toggleMenu}>
+                    <a href="#projects">My Projects</a>
+                  </button>
+                </li>
+                <li>
+                  <button className="nav-button" onClick={toggleMenu}>
+                    <a href="#contact">Contact</a>
+                  </button>
+                </li>
+              </div>
+            </>
+          )}
+        </div>
+      </nav>
+
       <section id="profile">
         <div className="home-pic-container">
           <img src={sonia} alt="Sonia Huynh" />
@@ -83,4 +158,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Portfolio
