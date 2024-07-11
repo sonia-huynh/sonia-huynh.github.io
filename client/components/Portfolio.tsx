@@ -5,6 +5,7 @@ import github from '../../Public/images/github.png'
 import about from '../../Public/images/about.png'
 import arrow from '../../Public/images/arrow.png'
 import check from '../../Public/images/checkmark.png'
+import email from '../../Public/images/email.png'
 import bookBound from '../../Public/assets/BookBoundDemo.mp4'
 import bean from '../../Public/assets/dreambeanmemeteam.mp4'
 import Lucas from '../../Public/assets/LucasMansionDemo.mp4'
@@ -101,50 +102,53 @@ function Portfolio() {
           )}
         </div>
       </nav>
-
       <section id="profile">
-        <div className="pic-container">
-          <img src={sonia} alt="Sonia Huynh" />
-        </div>
-        <div className="home-text">
-          <p className="section-text-p1">Hello, I&apos;m</p>
-          <h1 className="profile-title">Sonia Huynh</h1>
-          <p className="section-text-p2">Web Developer</p>
-          <div className="home-button-container">
-            <button className="home-button" id="cv" onClick={openCV}>
-              Check CV
-            </button>
-            <button
-              className="home-button"
-              id="contact"
-              onClick={() => navigate('/contact')}
-            >
-              Contact me
-            </button>
+        <div className="section-container">
+          <div className="pic-container">
+            <img src={sonia} alt="Sonia Huynh" />
           </div>
-          <div id="socials-container">
-            <a
-              href="https://www.linkedin.com/in/sonia-huynh/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={linkedin}
-                alt="Sonia's linkedIn profile"
-                className="icon"
-              />
-            </a>
-            <a
-              href="https://github.com/sonia-huynh"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={github} alt="Sonia's Github profile" className="icon" />
-            </a>
+          <div className="home-text">
+            <p className="section-text-p1">Hello, I&apos;m</p>
+            <h1 className="profile-title">Sonia Huynh</h1>
+            <p className="section-text-p2">Web Developer</p>
+            <div className="home-button-container">
+              <button className="home-button" id="cv" onClick={openCV}>
+                Check CV
+              </button>
+              <button
+                className="home-button"
+                onClick={() => navigate('/#contact')}
+              >
+                Contact me
+              </button>
+            </div>
+            <div id="socials-container">
+              <a
+                href="https://www.linkedin.com/in/sonia-huynh/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={linkedin}
+                  alt="Sonia's linkedIn profile"
+                  className="icon"
+                />
+              </a>
+              <a
+                href="https://github.com/sonia-huynh"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={github}
+                  alt="Sonia's Github profile"
+                  className="icon"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </section>
-      <br />
       <section id="about">
         <p className="section-text-p1">A Bit</p>
         <h1 className="title">About me</h1>
@@ -171,7 +175,7 @@ function Portfolio() {
               playing card/board games with my friends and family.
             </p>
           </div>
-          <div className="about-pic-container pic-container">
+          <div className="about-pic-container">
             <img src={about} alt="about me coding" className="about-pic" />
           </div>
         </div>
@@ -267,7 +271,7 @@ function Portfolio() {
           <img src={arrow} alt="move to next section" className="arrow icon" />
         </button>
       </section>
-      <section id="projects">
+      <section id="projects" className="project-section">
         <p className="section-text-p1">Browse My Recent</p>
         <h1 className="title">Projects</h1>
         <div className="tech-details-container project-details-container">
@@ -411,6 +415,28 @@ function Portfolio() {
           />
         </button>
       </section>
+      <section id="contact">
+        <p className="section-text-p1">Get In Touch</p>
+        <h1 className="title">Contact Me</h1>
+        <div className="contact-info-upper-container">
+          <div className="contact-info-container">
+            <img src={email} alt="email" className="icon email-icon" />
+            <p>
+              <a href="mailto:soniahuynhkl@gmail.com">soniahuynhkl@gmail.com</a>
+            </p>
+          </div>
+          <div className="contact-info-container">
+            <img src={linkedin} alt="linkedin" className="icon contact-icon" />
+            <p>
+              <a href="https://www.linkedin.com/in/sonia-huynh/">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>Copyright &#169; 2024 Sonia Huynh All Rights Reserved</p>
+      </footer>
+      <br />
     </>
   )
 }
