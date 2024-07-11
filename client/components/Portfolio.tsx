@@ -10,7 +10,6 @@ import bookBound from '../../Public/assets/BookBoundDemo.mp4'
 import bean from '../../Public/assets/dreambeanmemeteam.mp4'
 import Lucas from '../../Public/assets/LucasMansionDemo.mp4'
 
-import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 function Portfolio() {
@@ -21,7 +20,6 @@ function Portfolio() {
     setToggle((prevState) => !prevState)
     setHamburgerIcon((prevState) => !prevState)
   }
-  const navigate = useNavigate()
   function openCV() {
     window.open(CV, '_blank')
   }
@@ -117,7 +115,7 @@ function Portfolio() {
               </button>
               <button
                 className="home-button"
-                onClick={() => navigate('/#contact')}
+                onClick={() => () => (location.href = './#contact')}
               >
                 Contact me
               </button>
