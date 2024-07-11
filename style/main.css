@@ -206,6 +206,10 @@ section {
   gap: 1rem;
 }
 
+#profile .section-container {
+  gap: 3.5rem;
+}
+
 .pic-container {
   display: flex;
   height: 400px;
@@ -309,15 +313,24 @@ section {
 }
 
 .about-pic {
-  height: 250px;
+  height: 320px;
   width: auto;
 }
 
-.text-container {
+#about .text-container {
   padding: 3rem;
   justify-items: center;
   flex-direction: column;
-  width: 600px;
+  width: 550px;
+  text-align: left;
+}
+
+.text-container {
+  padding: 2.5rem;
+  justify-items: center;
+  flex-direction: column;
+  width: 500px;
+  text-align: justify;
 }
 
 .arrow {
@@ -344,6 +357,7 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  justify-content: center;
 }
 
 .experience-sub-title {
@@ -497,6 +511,11 @@ footer p {
     height: 300px;
   }
 
+  .about-pic {
+    height: 250px;
+    width: auto;
+  }
+
   #about .arrow {
     position: absolute;
     right: -5rem;
@@ -508,7 +527,19 @@ footer p {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1320px) {
+  .section-text-p1 {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+
   nav {
     display: none;
   }
@@ -580,6 +611,10 @@ footer p {
   .project-video {
     width: 100%;
     height: auto;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
   }
 
   footer nav {

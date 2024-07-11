@@ -151,6 +151,9 @@ function Portfolio() {
         <p className="section-text-p1">A Bit</p>
         <h1 className="title">About me</h1>
         <div className="section-container">
+          <div className="about-pic-container">
+            <img src={about} alt="about me coding" className="about-pic" />
+          </div>
           <div className="text-container">
             <p>
               My name is Sonia and I am an enthusiastic and compassionate
@@ -172,9 +175,6 @@ function Portfolio() {
               Outside of coding, I have an interest in reading, crocheting and
               playing card/board games with my friends and family.
             </p>
-          </div>
-          <div className="about-pic-container">
-            <img src={about} alt="about me coding" className="about-pic" />
           </div>
         </div>
         <button
