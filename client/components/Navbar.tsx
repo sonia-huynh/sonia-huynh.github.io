@@ -56,22 +56,22 @@ export default function Navbar() {
             <>
               <div className={toggle ? 'menu-links-open' : 'menu-links'}>
                 <li>
-                  <button onClick={toggleMenu}>
+                  <button className="nav-button" onClick={toggleMenu}>
                     <Link to="/">Home</Link>
                   </button>
                 </li>
                 <li>
-                  <button onClick={toggleMenu}>
+                  <button className="nav-button" onClick={toggleMenu}>
                     <Link to="about">About</Link>
                   </button>
                 </li>
                 <li>
-                  <button onClick={toggleMenu}>
+                  <button className="nav-button" onClick={toggleMenu}>
                     <Link to="my-projects">My Projects</Link>
                   </button>
                 </li>
                 <li>
-                  <button onClick={toggleMenu}>
+                  <button className="nav-button" onClick={toggleMenu}>
                     <Link to="contact">Contact</Link>
                   </button>
                 </li>
