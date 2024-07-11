@@ -1,9 +1,11 @@
-import logo from '../../Public/images/bookbound.jpg'
+import { useNavigate } from 'react-router-dom'
+import logo from '../../../Public/images/bookbound.jpg'
 
 export default function BookBound() {
+  const navigate = useNavigate()
   return (
     <>
-      <h1>{`BookBound`}</h1>
+      <h1>{`Search Bar`}</h1>
       <div className="divContainer">
         <img src={logo} alt="bookbound logo" className="imgcard" />
       </div>
@@ -36,6 +38,21 @@ export default function BookBound() {
           again, the book remains as &quot;saved&quot; instead of having the
           option to save the book again.
         </p>
+      </div>
+      <br />
+      <div className="homediv" id="blogButtonDiv">
+        <button
+          className="blogButtons"
+          onClick={() => navigate('/my-projects/BookBoundBlog/Menu')}
+        >
+          ← Blog Menu
+        </button>
+        <button
+          className="blogButtons"
+          onClick={() => navigate('/BookBoundBlog/localStorage')}
+        >
+          Next Blog →
+        </button>
       </div>
     </>
   )
