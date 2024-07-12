@@ -604,6 +604,17 @@ footer p {
     height: 83vh;
     margin-bottom: 0;
   }
+
+  .tech-container {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .details-container {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
   article {
     font-size: 1rem;
   }
