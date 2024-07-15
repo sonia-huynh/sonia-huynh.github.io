@@ -22,6 +22,7 @@
   "author": "Dev Academy Aotearoa",
   "license": "ISC",
   "dependencies": {
+    "framer-motion": "^11.3.2",
     "superagent": "^8.1.2"
   },
   "devDependencies": {
