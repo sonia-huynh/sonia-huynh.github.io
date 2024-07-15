@@ -9,12 +9,26 @@ import email from '../../Public/images/email.png'
 import bookBound from '../../Public/assets/BookBoundDemo.mp4'
 import bean from '../../Public/assets/dreambeanmemeteam.mp4'
 import Lucas from '../../Public/assets/LucasMansionDemo.mp4'
+import hello from '../../Public/images/hello-world.png'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
+import { useInView, motion } from 'framer-motion'
 
 function Portfolio() {
   const [toggle, setToggle] = useState(false)
   const [hamburgerIcon, setHamburgerIcon] = useState(true)
+
+  // motion animation
+  const aboutRef = useRef(null)
+  const techRef = useRef(null)
+  const projectRef1 = useRef(null)
+  const projectRef2 = useRef(null)
+  const projectRef3 = useRef(null)
+  const isAboutInView = useInView(aboutRef, { once: true })
+  const isTechInView = useInView(techRef, { once: true })
+  const isProject1InView = useInView(projectRef1, { once: true })
+  const isProject2InView = useInView(projectRef2, { once: true })
+  const isProject3InView = useInView(projectRef3, { once: true })
 
   function toggleMenu() {
     setToggle((prevState) => !prevState)
@@ -24,15 +38,119 @@ function Portfolio() {
     window.open(CV, '_blank')
   }
 
+  const profileVariants = {
+    hidden: {
+      y: -200,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+
+      transition: {
+        delay: 0.1,
+        type: 'spring',
+        stiffness: 60,
+      },
+    },
+  }
+
+  const aboutContainerVariants = {
+    hidden: {
+      x: '40vw',
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: 'tween',
+        duration: 0.75,
+      },
+    },
+  }
+
+  const techVariants = {
+    hidden: {
+      y: 200,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.3,
+        type: 'spring',
+        stiffness: 80,
+        easeIn: 'easeIn',
+        duration: 0.5,
+      },
+    },
+  }
+
+  const projectOddVariants = {
+    hidden: {
+      x: '40vw',
+      opacity: 0,
+    },
+
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: 'tween',
+        duration: 0.75,
+      },
+    },
+  }
+
+  const projectEvenVariants = {
+    hidden: {
+      x: '-40vw',
+      opacity: 0,
+    },
+
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: 'tween',
+        duration: 0.75,
+      },
+    },
+  }
+
+  const shakeVariants = {
+    initial: {
+      opacity: 1,
+      rotate: 0,
+    },
+    visible: {
+      opacity: 1,
+      rotate: [0, -5, 5, -5, 5, -5, 0], // keyframes for rotate shake effect
+      transition: {
+        type: 'tween',
+        duration: 0.6, // Duration of the animation
+        ease: 'easeInOut', // Easing function
+      },
+    },
+  }
+
   return (
     <>
       <nav className="navbar">
-        <div className="logo">Sonia Huynh </div>
+        <motion.div
+          className="logo"
+          variants={shakeVariants}
+          whileHover="visible"
+          initial="initial"
+        >
+          <a href="#profile" id="logo">
+            Sonia Huynh
+          </a>
+        </motion.div>
         <div>
           <ul className="nav-links">
-            <li>
-              <a href="#profile">Home</a>
-            </li>
             <li>
               <a href="#about">About</a>
             </li>
@@ -49,7 +167,13 @@ function Portfolio() {
         </div>
       </nav>
       <nav className="hamburger-nav">
-        <div className="logo">Sonia Huynh</div>
+        <div className="logo">
+          {' '}
+          <a href="#profile" id="logo">
+            Sonia Huynh
+          </a>
+        </div>
+
         <div className="hamburger-menu">
           <div
             className={hamburgerIcon ? 'hamburger-icon' : 'hamburger-icon-open'}
@@ -70,11 +194,6 @@ function Portfolio() {
           {toggle && (
             <>
               <div className={toggle ? 'menu-links-open' : 'menu-links'}>
-                <li>
-                  <button className="nav-button" onClick={toggleMenu}>
-                    <a href="#profile">Home</a>
-                  </button>
-                </li>
                 <li>
                   <button className="nav-button" onClick={toggleMenu}>
                     <a href="#about">About</a>
@@ -101,7 +220,12 @@ function Portfolio() {
         </div>
       </nav>
       <section id="profile">
-        <div className="section-container">
+        <motion.div
+          className="section-container"
+          variants={profileVariants}
+          initial="hidden"
+          animate="visible"
+        >
           <div className="pic-container">
             <img src={sonia} alt="Sonia Huynh" />
           </div>
@@ -145,12 +269,18 @@ function Portfolio() {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section id="about">
         <p className="section-text-p1">A Bit</p>
         <h1 className="title">About me</h1>
-        <div className="section-container">
+        <span ref={aboutRef}></span>
+        <motion.div
+          className="section-container"
+          variants={aboutContainerVariants}
+          initial="hidden"
+          animate={isAboutInView ? 'visible' : 'hidden'}
+        >
           <div className="about-pic-container">
             <img src={about} alt="about me coding" className="about-pic" />
           </div>
@@ -176,7 +306,7 @@ function Portfolio() {
               playing card/board games with my friends and family.
             </p>
           </div>
-        </div>
+        </motion.div>
         <button
           className="nav-button"
           onClick={() => (location.href = './#tech')}
@@ -184,11 +314,16 @@ function Portfolio() {
           <img src={arrow} alt="move to next section" className="arrow icon" />
         </button>
       </section>
-
       <section id="tech">
         <p className="section-text-p1">Explore My</p>
         <h1 className="title">Tech Stack</h1>
-        <div className="tech-details-container">
+        <span ref={techRef}></span>
+        <motion.div
+          className="tech-details-container"
+          variants={techVariants}
+          initial="hidden"
+          animate={isTechInView ? 'visible' : 'hidden'}
+        >
           <div className="tech-container">
             <div className="details-container">
               <h2 className="experience-sub-title">Frontend Development</h2>
@@ -261,7 +396,7 @@ function Portfolio() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
         <button
           className="nav-button"
           onClick={() => (location.href = './#projects')}
@@ -271,9 +406,20 @@ function Portfolio() {
       </section>
       <section id="projects" className="project-section">
         <p className="section-text-p1">Browse My Recent</p>
-        <h1 className="title">Projects</h1>
+        <h1 className="title" ref={projectRef1}>
+          Projects
+        </h1>
         <div className="tech-details-container project-details-container">
-          <div className="project-box">
+          <motion.div
+            className="project-box"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: '0px 0px 8px rgb(210,105,30)',
+            }}
+            variants={projectOddVariants}
+            initial="hidden"
+            animate={isProject1InView ? 'visible' : ''}
+          >
             <h2 className="project-title">BookBound</h2>
             <div className="project-container">
               <video controls className="project-video">
@@ -312,9 +458,20 @@ function Portfolio() {
                 <button className="home-button project-button">Github</button>
               </a>
             </div>
-          </div>
-          <div className="project-box">
-            <h2 className="project-title">Lucas&apos; Mansion</h2>
+          </motion.div>
+          <motion.div
+            className="project-box"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: '0px 0px 8px 	rgb(139,0,0)',
+            }}
+            variants={projectEvenVariants}
+            initial="hidden"
+            animate={isProject2InView ? 'visible' : ''}
+          >
+            <h2 className="project-title" ref={projectRef2}>
+              Lucas&apos; Mansion
+            </h2>
             <div className="project-container">
               <div className="text-container">
                 <p>
@@ -366,9 +523,20 @@ function Portfolio() {
                 </button>
               </a>
             </div>
-          </div>
-          <div className="project-box">
-            <h2 className="project-title">DreamBeanMemeTeam</h2>
+          </motion.div>
+          <motion.div
+            className="project-box"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: '0px 0px 8px rgb(127,255,212)',
+            }}
+            variants={projectOddVariants}
+            initial="hidden"
+            animate={isProject3InView ? 'visible' : ''}
+          >
+            <h2 className="project-title" ref={projectRef3}>
+              DreamBeanMemeTeam
+            </h2>
             <div className="project-container">
               <video controls className="project-video">
                 <source src={bean} type="video/mp4" />
@@ -399,7 +567,7 @@ function Portfolio() {
                 <button className="home-button project-button">Github</button>
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
         <button
           className="nav-button"
@@ -414,6 +582,9 @@ function Portfolio() {
         </button>
       </section>
       <section id="contact">
+        <div className="section-container" id="contact-container">
+          <img src={hello} alt="hello" className="helloimg" />
+        </div>
         <p className="section-text-p1">Get In Touch</p>
         <h1 className="title">Contact Me</h1>
         <div className="contact-info-upper-container">
