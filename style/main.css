@@ -189,10 +189,15 @@ a:hover {
   padding: 2rem;
 }
 
+.helloimg-container {
+  display: flex;
+  justify-content: center;
+}
+
 /* Home */
 section {
   padding-top: 4vh;
-  height: 96vh;
+  /* height: 96vh; */
   margin: 0 16rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -299,6 +304,7 @@ section {
   display: flex;
   gap: 2rem;
   justify-content: center;
+  margin: auto;
 }
 
 #about {
@@ -316,7 +322,7 @@ section {
 }
 
 .about-pic {
-  height: 320px;
+  height: 24rem;
   width: auto;
 }
 
@@ -324,7 +330,7 @@ section {
   padding: 3rem;
   justify-items: center;
   flex-direction: column;
-  width: 550px;
+  width: auto;
   text-align: left;
 }
 
@@ -339,7 +345,7 @@ section {
 .arrow {
   position: absolute;
   right: -5rem;
-  bottom: 15rem;
+  bottom: 3rem;
 }
 
 .about-container {
@@ -352,9 +358,13 @@ section {
 
 #tech {
   position: relative;
-  padding-top: 10rem;
+  padding-top: 9rem;
+  margin-bottom: 6rem;
 }
 
+#tech .section-container {
+  flex-direction: column;
+}
 .tech-container {
   display: flex;
   gap: 2rem;
@@ -401,11 +411,11 @@ article .icon {
 /* Projects */
 #projects {
   position: relative;
-  padding-top: 8rem;
+  padding-top: 12rem;
 }
 
-.project-section {
-  height: auto;
+#projects .section-container {
+  flex-direction: column;
 }
 
 .project-video {
@@ -457,6 +467,11 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-top: 8rem;
+}
+
+#contact .section-container {
+  flex-direction: column;
 }
 
 .contact-info-upper-container {
@@ -504,6 +519,10 @@ footer p {
 /* Media Queries */
 
 @media screen and (max-width: 1400px) {
+  section {
+    margin: 0 5%;
+  }
+
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -526,11 +545,24 @@ footer p {
   }
 
   #about .section-container {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #about .text-container {
+    text-align: center;
+    width: auto;
+  }
+  .about-pic-container {
+    height: auto;
   }
 }
 
 @media screen and (max-width: 1320px) {
+  section {
+    margin: 0 5%;
+  }
+
   .section-text-p1 {
     font-size: 1.5rem;
   }
@@ -577,21 +609,11 @@ footer p {
   .section-container {
     height: fit-content;
   }
-  section {
-    margin: 0 5%;
-  }
+
   .pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
-  }
-  .about-pic-container {
-    height: auto;
-  }
-
-  #about .section-container {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   #about .text-container {
