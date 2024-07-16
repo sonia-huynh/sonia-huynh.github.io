@@ -462,10 +462,53 @@ function Portfolio() {
                   <br />
                   <br />
                   <h3>Tech Stack:</h3>
-                  <p>
-                    React, Typescript, Tailwind, SQLite (with knex.js), Node.js,
-                    Superagent, Express and GoogleBooks api
-                  </p>
+                  <div className="project-badges-container">
+                    <img
+                      src="https://img.shields.io/badge/TypeScript-07405E?style=flat&logo=typescript"
+                      alt="Typescript"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/React-badge?style=flat&logo=react&color=07405E"
+                      alt="React"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/Tailwind%20CSS-07405E?style=flat&logo=tailwindcss"
+                      alt="TailwindCSS"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/CSS-07405E?&style=flat&logo=css3"
+                      alt="CSS"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/Node.js-07405E?style=flat&logo=node.js"
+                      alt="Node.js"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/Express-07405E?style=flat&logo=express"
+                      alt="Express.js"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/SQLite-07405E?style=flat&logo=sqlite"
+                      alt="SQLite"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/knex.js-07405E?style=flat&logo=knexdotjs"
+                      alt="Knex.js"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/GoogleBooksAPI-badge?style=flat&logoColor=%2307405e&color=%2307405e"
+                      alt="Knex.js"
+                      className="tech-badge"
+                    />
+                  </div>
                 </div>
               </div>
               <div className="project-button">
@@ -513,10 +556,44 @@ function Portfolio() {
                   <br />
 
                   <h3>Tech Stack:</h3>
-                  <p>
-                    React, Typescript, CSS, SQLite (with knex.js), Node.js and
-                    Express.js
-                  </p>
+
+                  <div className="project-badges-container">
+                    <img
+                      src="https://img.shields.io/badge/TypeScript-07405E?style=flat&logo=typescript"
+                      alt="Typescript"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/React-badge?style=flat&logo=react&color=07405E"
+                      alt="React"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/CSS-07405E?&style=flat&logo=css3"
+                      alt="CSS"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/Node.js-07405E?style=flat&logo=node.js"
+                      alt="Node.js"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/Express-07405E?style=flat&logo=express"
+                      alt="Express.js"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/SQLite-07405E?style=flat&logo=sqlite"
+                      alt="SQLite"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/knex.js-07405E?style=flat&logo=knexdotjs"
+                      alt="Knex.js"
+                      className="tech-badge"
+                    />
+                  </div>
                 </div>
                 <video controls className="project-video">
                   <source src={Lucas} type="video/mp4" />
@@ -570,11 +647,36 @@ function Portfolio() {
                     the names of the jelly beans given to you and you have to
                     click on the correct jelly bean that matches the name.
                   </p>
-
                   <br />
+                  <p>
+                    For a bit more of a challenge I added in hard mode which
+                    quizzes the player on a selection of 114 jelly beans instead
+                    of 10.
+                  </p>
                   <br />
                   <h3>Tech Stack:</h3>
-                  <p>React, Typescript, CSS and Jelly Belly api</p>
+                  <div className="project-badges-container">
+                    <img
+                      src="https://img.shields.io/badge/TypeScript-07405E?style=flat&logo=typescript"
+                      alt="Typescript"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/React-badge?style=flat&logo=react&color=07405E"
+                      alt="React"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/CSS-07405E?&style=flat&logo=css3"
+                      alt="CSS"
+                      className="tech-badge"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/JellyBellyAPI-badge?style=flat&logoColor=%2307405e&color=%2307405e"
+                      alt="jelly belly api"
+                      className="tech-badge"
+                    />
+                  </div>
                 </div>
               </div>
               <div className="project-button">

@@ -444,6 +444,17 @@ article .icon {
   padding: 1rem;
 }
 
+.project-badges-container {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.tech-badge {
+  height: 1.5rem;
+}
+
 .project-container {
   padding: 10px;
   display: flex;
