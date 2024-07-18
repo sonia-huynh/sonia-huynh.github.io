@@ -86,6 +86,19 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+.other-links {
+  color: rgb(47, 105, 212);
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+.other-links:hover {
+  color: rgb(17, 58, 134);
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+  text-decoration-color: rgb(17, 58, 134);
+}
+
 .logo {
   font-size: 2rem;
 }
@@ -418,6 +431,16 @@ article .icon {
   flex-direction: column;
 }
 
+.project-gif {
+  height: 20rem;
+  width: 35rem;
+}
+
+.gif-container {
+  display: flex;
+  align-items: center;
+}
+
 .project-video {
   width: 35rem;
   height: 22rem;
@@ -631,7 +654,8 @@ footer p {
     text-align: center;
     width: auto;
   }
-  .project-video {
+  .project-video,
+  .project-gif {
     width: 100%;
     height: auto;
   }
@@ -665,7 +689,8 @@ footer p {
     font-size: 1rem;
   }
 
-  .project-video {
+  .project-video,
+  .project-gif {
     width: 100%;
     height: auto;
   }
