@@ -183,6 +183,7 @@ const projectWorks = [
       },
     ],
     githubUrl: 'https://github.com/sonia-huynh/Lucas-Mansion',
+    deployedUrl: 'https://lucas-mansion.pushed.nz/',
   },
   {
     title: 'DreamBeanMemeTeam',
