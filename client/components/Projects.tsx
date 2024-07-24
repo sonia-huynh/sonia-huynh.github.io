@@ -83,7 +83,7 @@ const projectWorks = [
       {
         type: 'text',
         content:
-          'This project helped consolidate my learning on using external APIs and how to build a fullstack web app from scratch.',
+          'This project helped consolidate my learning on using external APIs and how to build a fullstack web app from scratch on my own.',
       },
     ],
     techStack: [
@@ -192,8 +192,7 @@ const projectWorks = [
     body: [
       {
         type: 'text',
-        content:
-          ' This Friday Group Project&apos;s focus was to use an external api to build something, so we created a fun guessing game using the JellyBelly Api where we randomised the names of the jelly beans given to you and you have to click on the correct jelly bean that matches the name.',
+        content: `This Friday Group Project's focus was to use an external api to build something, so we created a fun guessing game using the JellyBelly Api where we randomised the names of the jelly beans given to you and you have to click on the correct jelly bean that matches the name.`,
       },
       {
         type: 'break',
