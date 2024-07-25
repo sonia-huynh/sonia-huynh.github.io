@@ -337,25 +337,22 @@ export default function Projects() {
                     ))}
                   </div>
                 </div>
-
-                <div className="project-button home-button-container">
-                  <a href={project.githubUrl} target="_blank" rel="noreferrer">
+              </div>
+              <div className="project-button home-button-container">
+                <a href={project.githubUrl} target="_blank" rel="noreferrer">
+                  <button className="home-button project-button">Github</button>
+                </a>
+                {project.deployedUrl && (
+                  <a
+                    href={project.deployedUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <button className="home-button project-button">
-                      Github
+                      Deployed App
                     </button>
                   </a>
-                  {project.deployedUrl && (
-                    <a
-                      href={project.deployedUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <button className="home-button project-button">
-                        Deployed App
-                      </button>
-                    </a>
-                  )}
-                </div>
+                )}
               </div>
             </motion.div>
           ))}
