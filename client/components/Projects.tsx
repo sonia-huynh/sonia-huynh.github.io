@@ -1,12 +1,66 @@
 import qr from '../../Public/assets/simple-qr.gif'
 import bookBound from '../../Public/assets/BookBoundDemo.mp4'
 import bean from '../../Public/assets/dreambeanmemeteam.mp4'
+import bubbleNotes from '../../Public/assets/bubblegumNotesDemo.gif'
 import Lucas from '../../Public/assets/LucasMansionDemo.mp4'
 import { useRef } from 'react'
 import { useInView, motion } from 'framer-motion'
 import React from 'react'
 
 const projectWorks = [
+  {
+    title: 'Bubblegum Notes - Work in Progress',
+    demo: { type: 'gif', source: bubbleNotes },
+    demoAlt: 'Bubblegum notes demo',
+    body: [
+      {
+        type: 'text',
+        content:
+          'This project was built to practice my React states, learn how to use the MongoDB database and to practice implementing Auth0 in my projects.',
+      },
+
+      { type: 'break' },
+      {
+        type: 'text',
+        content:
+          'This is currently a work in progress, my next step is to implement the MongoDB database and then Auth0 for users to login so they can save their notes.',
+      },
+      { type: 'break' },
+
+      {
+        type: 'text',
+        content:
+          'For users that do not sign in to save their notes, it is saved in the browser session storage.',
+      },
+    ],
+    techStack: [
+      {
+        language: 'React',
+        logo: 'https://img.shields.io/badge/React-badge?style=flat&logo=react&color=07405E',
+      },
+      {
+        language: 'JavaScript',
+        logo: 'https://img.shields.io/badge/JavaScript-07405E?style=flat&logo=javascript',
+      },
+      {
+        language: 'HTML',
+        logo: 'https://img.shields.io/badge/HTML-07405E?style=flat&logo=html5',
+      },
+      {
+        language: 'CSS',
+        logo: 'https://img.shields.io/badge/CSS-07405E?&style=flat&logo=css3',
+      },
+      {
+        language: 'Node.js',
+        logo: 'https://img.shields.io/badge/Node.js-07405E?style=flat&logo=node.js',
+      },
+      {
+        language: 'MongoDB',
+        logo: 'https://img.shields.io/badge/MongoDB-07405E?&style=flat&logo=mongodb',
+      },
+    ],
+    githubUrl: 'https://github.com/sonia-huynh/bubblegumNotes',
+  },
   {
     title: 'Simple QR Code',
     demo: { type: 'gif', source: qr },
