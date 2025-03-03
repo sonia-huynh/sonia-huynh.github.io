@@ -271,7 +271,6 @@ const projectWorks = [
       },
     ],
     githubUrl: 'https://github.com/sonia-huynh/Lucas-Mansion',
-    deployedUrl: 'https://lucas-mansion.pushed.nz/',
   },
   {
     title: 'DreamBeanMemeTeam',
@@ -280,7 +279,7 @@ const projectWorks = [
     body: [
       {
         type: 'text',
-        content: `This Friday Group Project's focus was to use an external api to build something, so we created a fun guessing game using the JellyBelly Api where we randomised the names of the jelly beans given to you and you have to click on the correct jelly bean that matches the name.`,
+        content: `For one of my DevAcademy group project it was to focus on using an external api to build something, so we created a fun guessing game using the JellyBelly Api where we randomised the names of the jelly beans given to you and you have to click on the correct jelly bean that matches the name.`,
       },
       {
         type: 'break',
@@ -312,6 +311,7 @@ const projectWorks = [
     githubUrl: 'https://github.com/sonia-huynh/DreamBeanMemeTeam',
   },
 ]
+
 export default function Projects() {
   const refs = useRef(projectWorks.map(() => React.createRef()))
   const inView = refs.current.map((ref) => {
