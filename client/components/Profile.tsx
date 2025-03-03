@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import linkedin from '../../Public/images/linkedin.png'
 import github from '../../Public/images/github.png'
-import CV from '../../Public/assets/Sonia Huynh CV 2024.pdf'
+import CV from '../../Public/assets/soniahuynhCV.pdf'
 import sonia from '../../Public/images/soniahuynh.png'
 
 export default function Profile() {
