@@ -2,12 +2,53 @@ import qr from '../../Public/assets/simple-qr.gif'
 import bookBound from '../../Public/assets/BookBoundDemo.mp4'
 import bean from '../../Public/assets/dreambeanmemeteam.mp4'
 import bubbleNotes from '../../Public/assets/bubblegumNotesDemo.gif'
+import nameScrmblr from '../../Public/assets/nameScrmblr.gif'
 import Lucas from '../../Public/assets/LucasMansionDemo.mp4'
 import { useRef } from 'react'
 import { useInView, motion } from 'framer-motion'
 import React from 'react'
 
 const projectWorks = [
+  {
+    title: 'NameScrmblr',
+    demo: { type: 'gif', source: nameScrmblr },
+    demoAlt: 'nameScrmblr demo',
+    body: [
+      {
+        type: 'text',
+        content:
+          "For me and my friend's birthday we decided our friends should dress as each other, so I created this quick app to randomly assign each person a friend to dress as and send it to them in an email so everything stays anonymous unless the user clicks the reveal assignment button.",
+      },
+
+      { type: 'break' },
+
+      {
+        type: 'text',
+        content:
+          'This app is a frontend project built with NextJS and has been deployed on Vercel.',
+      },
+    ],
+    techStack: [
+      {
+        language: 'React',
+        logo: 'https://img.shields.io/badge/React-badge?style=flat&logo=react&color=07405E',
+      },
+      {
+        language: 'Typescript',
+        logo: 'https://img.shields.io/badge/Typescript-07405E?&style=flat&logo=typescript',
+      },
+      {
+        language: 'NextJS',
+        logo: 'https://img.shields.io/badge/NextJS-07405E?&style=flat&logo=nextdotjs',
+      },
+      {
+        language: 'TailwindCSS',
+        logo: 'https://img.shields.io/badge/TailwindCSS-07405E?&style=flat&logo=tailwindcss',
+      },
+    ],
+    githubUrl: 'https://github.com/sonia-huynh/name-scrambler',
+    deployedUrl: 'https://name-scrmblr.vercel.app/',
+  },
   {
     title: 'Bubblegum Notes - Work in Progress',
     demo: { type: 'gif', source: bubbleNotes },
@@ -23,14 +64,7 @@ const projectWorks = [
       {
         type: 'text',
         content:
-          'This is currently a work in progress, my next step is to implement the MongoDB database and then Auth0 for users to login so they can save their notes.',
-      },
-      { type: 'break' },
-
-      {
-        type: 'text',
-        content:
-          'For users that do not sign in to save their notes, it is saved in the browser session storage.',
+          'This is currently a work in progress, I am currently thinking of moving this to a NextJS app so that I can deploy it on Vercel',
       },
     ],
     techStack: [
@@ -39,8 +73,8 @@ const projectWorks = [
         logo: 'https://img.shields.io/badge/React-badge?style=flat&logo=react&color=07405E',
       },
       {
-        language: 'JavaScript',
-        logo: 'https://img.shields.io/badge/JavaScript-07405E?style=flat&logo=javascript',
+        language: 'Typescript',
+        logo: 'https://img.shields.io/badge/Typescript-07405E?&style=flat&logo=typescript',
       },
       {
         language: 'HTML',
