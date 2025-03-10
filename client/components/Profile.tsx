@@ -58,19 +58,35 @@ export default function Profile() {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src={linkedin}
-                alt="Sonia's linkedIn profile"
-                className="icon"
-              />
+              <motion.div
+                whileHover={{
+                  scale: 1.15,
+                }}
+              >
+                <img
+                  src={linkedin}
+                  alt="Sonia's linkedIn profile"
+                  className="icon"
+                />
+              </motion.div>
             </a>
-            <a
-              href="https://github.com/sonia-huynh"
-              target="_blank"
-              rel="noreferrer"
+            <motion.div
+              whileHover={{
+                scale: 1.15,
+              }}
             >
-              <img src={github} alt="Sonia's Github profile" className="icon" />
-            </a>
+              <a
+                href="https://github.com/sonia-huynh"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={github}
+                  alt="Sonia's Github profile"
+                  className="icon"
+                />
+              </a>
+            </motion.div>
           </div>
         </div>
       </motion.div>
